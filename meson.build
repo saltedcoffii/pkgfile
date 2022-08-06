@@ -149,6 +149,10 @@ install_data(
   install_dir : join_paths(get_option('datadir'), 'zsh/site-functions'))
 
 install_data(
+  'extra/pkgfile.hook'
+  install_dir : join_paths(get_option('datadir'), 'libalpm/hooks'))
+
+install_data(
   'LICENSE',
   install_dir : join_paths(get_option('datadir'), 'licenses/pkgfile'))
 

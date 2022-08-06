@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating pkgfile database
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pkgfile -u 1> /dev/null'
